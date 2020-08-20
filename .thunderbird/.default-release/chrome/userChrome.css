@@ -20,4 +20,5 @@
 /* Accent color (to be used with DeepDark theme) */
 :root {
   --deepdark-accent-color: #796c3e !important;
+  --deepdark-accent-color-a10: #000000 !important;
 }

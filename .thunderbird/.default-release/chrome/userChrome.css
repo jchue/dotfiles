@@ -1,23 +1,37 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* set default namespace to XUL */
 
-/* Folder and Message list font size */
+/* Font size for:
+Mail: Folder tree and message list
+Address Book: Directory Tree and contact list */
 #folderTree,
-#threadTree {
+#threadTree,
+#dirTree,
+#abResultsTree {
   font-size: 14px !important;
 }
 
-/* Folder list spacing */
-#folderTree treechildren::-moz-tree-row {
+/* Spacing for:
+Mail: Folder list */
+#folderTree treechildren::-moz-tree-row,
+#dirTree treechildren::-moz-tree-row {
   min-height: 30px !important;
 }
 
-/* Message list spacing */
+/* Spacing for:
+Mail: Message list */
 #threadTree treechildren::-moz-tree-row {
   min-height: 50px !important;
 }
 
-/* Accent color (to be used with DeepDark theme) */
+/* Spacing for:
+Address Book: Contact list */
+#abResultsTree treechildren::-moz-tree-row {
+  min-height: 30px !important;
+}
+
+/* Accent color override
+(to be used with DeepDark theme) */
 :root {
   --deepdark-accent-color: #796c3e !important;
   --deepdark-accent-color-a10: #000000 !important;

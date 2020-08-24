@@ -17,64 +17,64 @@ Color=18,18,18
 Color=85,85,85
 
 [Color1]
-Color=250,37,115
+Color=255,84,78
 
 [Color1Faint]
-Color=250,37,115
+Color=188,135,130
 
 [Color1Intense]
-Color=255,84,78
+Color=219,68,55
 
 [Color2]
 Color=121,108,62
 
 [Color2Faint]
-Color=152,225,35
+Color=171,164,114
 
 [Color2Intense]
-Color=99,95,42
+Color=99,94,53
 
 [Color3]
-Color=223,190,0
+Color=106,149,93
 
 [Color3Faint]
-Color=223,212,96
+Color=120,166,123
 
 [Color3Intense]
-Color=255,242,109
+Color=56,131,62
 
 [Color4]
-Color=82,212,255
+Color=109,149,168
 
 [Color4Faint]
-Color=16,128,208
+Color=110,133,154
 
 [Color4Intense]
-Color=50,152,175
+Color=88,137,168
 
 [Color5]
-Color=135,0,255
+Color=142,101,182
 
 [Color5Faint]
-Color=135,0,255
+Color=157,133,177
 
 [Color5Intense]
-Color=175,135,255
+Color=125,82,163
 
 [Color6]
-Color=88,135,105
+Color=60,95,80
 
 [Color6Faint]
-Color=67,168,208
+Color=105,141,131
 
 [Color6Intense]
 Color=36,57,48
 
 [Color7]
-Color=187,187,187
+Color=204,204,204
 
 [Color7Faint]
-Color=187,187,187
+Color=170,170,170
 
 [Color7Intense]
 Color=255,255,255
@@ -91,6 +91,6 @@ Color=255,255,255
 [General]
 Blur=false
 ColorRandomization=false
-Description=jchue
+Description=Custom
 Opacity=1
 Wallpaper=

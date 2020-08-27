@@ -1,0 +1,76 @@
+* {
+   -ThunarAbstractIconView-row-spacing: 70;
+   -ThunarAbstractIconView-column-spacing: 30;
+ }
+
+.thunar {
+  font-family: Fira Code, monospace;
+  font-size: 10px;
+}
+
+.thunar grid {
+  background-color: #1e1f1c;
+  color: #f1f1f1;
+}
+
+.thunar menubar#main-menu {
+  background-color: #1e1f1c;
+  color: #f1f1f1;
+}
+
+/* Navigation */
+.thunar toolbar#location-toolbar {
+  background-color: #1e1f1c;
+  color: #f1f1f1;
+  padding: 10px 5px;
+}
+
+.thunar toolbar entry {
+  background-color: #121212;
+  border: none;
+  border-radius: 0;
+  color: #f1f1f1;
+  padding: 0px 8px;
+}
+
+/*buttons in toolbar*/
+
+.thunar toolbar.horizontal button {
+  padding: 3px;
+}
+
+.thunar toolbar.horizontal button image {
+  -gtk-icon-transform: scale(0.5);
+}
+
+/* Left side */
+.thunar .sidebar {
+  border-top: none;
+}
+
+.thunar .sidebar treeview.view {
+  background-color: #1e1f1c;
+  color: #f1f1f1;
+}
+
+/* Separator */
+.thunar separator {
+  background-image: none;
+}
+
+/* Right side */
+.thunar scrolledwindow.frame.standard-view {
+  border-top: none;
+  border-bottom: none;
+}
+
+.thunar .frame.standard-view widget.view {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.thunar statusbar {
+  background-color: #1e1f1c;
+  color: #f1f1f1;
+  outline: none;
+}

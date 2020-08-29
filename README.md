@@ -5,3 +5,4 @@
 - **Bar:** i3bar
 - **Status:** i3status
 - **Terminal:** Alacritty
+- **File Manager:** Thunar

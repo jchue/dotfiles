@@ -19,7 +19,7 @@ set $mod Mod4
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 #font pango:DejaVu Sans Mono 8
 
-font pango: Fira Code 10
+font -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
 
 # Borders
 
@@ -200,7 +200,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set resolution
-exec --no-startup-id "xrandr --output Virtual-1 --mode 1920x1080"
+exec --no-startup-id "xrandr --output Virtual-1 --mode 1280x800"
 
 # Set background
 exec --no-startup-id xsetroot -solid "#090909"

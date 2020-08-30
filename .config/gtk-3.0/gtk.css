@@ -22,13 +22,21 @@ window menu {
   background-color: @background-dim;
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: @foreground;
-  font-family: "Fira Code", monospace;
-  font-size: 10px;
+  font-family: scientifica, monospace;
+  font-size: 11px;
 }
 
 window menu menuitem:hover {
-  background-color: @color7-bright;
+  background-color: shade(@background, 1.5);
   color: @foreground;
+}
+
+window menu menuitem {
+    color: @foreground;
+}
+
+window menu menuitem:disabled {
+    color: @foreground-dim;
 }
 
 
@@ -132,8 +140,9 @@ buttonbox button:focus {
  ********************/
 
 window.thunar {
-  font-family: "Fira Code", monospace;
-  font-size: 10px;
+  font-family: scientifica, monospace;
+  font-size: 11px;
+  font-smooth: never;
 }
 
 window.thunar grid {
@@ -149,23 +158,10 @@ window.thunar menubar#main-menu {
   color: @foreground;
 }
 
-window.thunar menubar#main-menu menuitem:hover {
-  background-color: @color7-bright;
+window.thunar menubar#main-menu > menuitem:hover {
+  background-color: shade(@background, 1.5);
   box-shadow: none;
   color: @foreground;
-}
-
-window.thunar menubar#main-menu menuitem menu {
-    background-color: @background-dim;
-    border: none;
-}
-
-window.thunar menubar#main-menu menuitem menu menuitem {
-    color: @foreground;
-}
-
-window.thunar menubar#main-menu menuitem menu menuitem:disabled {
-    color: @foreground-dim;
 }
 
 
@@ -186,7 +182,7 @@ window.thunar toolbar#location-toolbar button {
 }
 
 window.thunar toolbar#location-toolbar button:hover {
-  background-color: @color7-bright;
+  background-color: shade(@background, 1.5);
 }
 
 window.thunar toolbar#location-toolbar button:disabled {
@@ -220,7 +216,7 @@ window.thunar scrolledwindow.sidebar treeview.view {
 }
 
 window.thunar scrolledwindow.sidebar treeview.view:hover {
-  background-color: @color7-bright;
+  background-color: shade(@background, 1.5);
 }
 
 window.thunar scrolledwindow.sidebar treeview.view:selected {
@@ -288,8 +284,8 @@ dialog.background {
   background-color: @background-dim;
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: @foreground;
-  font-family: "Fira Code", monospace;
-  font-size: 10px;
+  font-family: scientifica, monospace;
+  font-size: 11px;
 }
 
 dialog notebook.frame {
@@ -299,32 +295,46 @@ dialog notebook.frame {
 
 /* Tab header */
 
-dialog notebook.frame header.top {
+header.top {
   background-color: transparent;
   border-bottom-color: @background-bright;
   padding: 0;
 }
 
-dialog notebook.frame header.top tabs {
+header.top tabs {
+  border-top: 1px solid @background-bright;
+  border-right: 1px solid @background-bright;
+  border-left: 1px solid @background-bright;
   margin: 0;
   padding: 0;
 }
 
-dialog notebook.frame header.top tabs tab {
-  background-color: transparent;
+header.top tabs tab {
+  background-color: @background;
+  border: none;
+  border-right: 1px solid @background-bright;
   color: @foreground;
   box-shadow: none;
   margin: 0;
   min-height: 0;
+  min-width: 0;
   padding: 5px 10px;
 }
 
-dialog notebook.frame header.top tabs tab:hover {
+header.top tabs tab:hover {
   background-color: @color7-bright;
 }
 
-dialog notebook.frame header.top tabs tab:checked {
+header.top tabs tab:checked {
   background-color: @color3;
+}
+
+header.top tabs tab button {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  min-height: 0;
+  min-width: 0;
 }
 
 

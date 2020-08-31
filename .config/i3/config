@@ -34,9 +34,9 @@ gaps outer 10
 # Colors
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #1e1f1c #1e1f1c #f1f1f1 #1e1f1c   #1e1f1c
-client.focused_inactive #1e1f1c #1e1f1c #f1f1f1 #1e1f1c   #1e1f1c
-client.unfocused        #121212 #121212 #555555 #121212   #121212
+client.focused          #141414 #141414 #a8a397 #141414   #141414
+client.focused_inactive #141414 #141414 #a8a397 #141414   #141414
+client.unfocused        #0a0a0a #0a0a0a #414140 #0a0a0a   #0a0a0a
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -200,7 +200,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set resolution
-exec --no-startup-id "xrandr --output Virtual-1 --mode 1920x1080"
+exec --no-startup-id "xrandr --output Virtual-1 --mode 1280x768"
 
 # Set background
 exec --no-startup-id xsetroot -solid "#090909"

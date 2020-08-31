@@ -1,8 +1,7 @@
 # dotfiles
 
 - **OS:** Arch
-- **WM:** i3-gap
-- **Bar:** i3bar
-- **Status:** i3status
+- **WM:** i3-gaps
+- **Bar:** polybar
 - **Terminal:** Alacritty
 - **File Manager:** Thunar

@@ -1,0 +1,103 @@
+* {
+  /* Forrester colors */
+  forester-foreground: #a8a397;
+  forester-foreground-dim: #414140;
+  forester-background: #141414;
+  forester-background-bright: #191919;
+  forester-background-dim: #0a0a0a;
+  forester-black: #1d2021;
+  forester-red: #491915;
+  forester-green: #5f5a2f;
+  forester-yellow: #845d2b;
+  forester-blue: #1e2c37;
+  forester-magenta: #52536b;
+  forester-cyan: #1c3632;
+  forester-white: @a8a397;
+
+  /* Theme colors */
+  foreground: @forester-foreground;
+  foreground-dim: @forester-foreground-dim;
+  background: @forester-background-bright;
+  background-dim: @forester-background;
+  input: @forester-background-dim;
+  accent: @forester-cyan;
+
+  /* Global */
+  color: @foreground;
+  scrollbar: true;
+}
+
+
+/* Container */
+
+mainbox {
+  background-color: @background;
+  padding: 20px;
+}
+
+
+/* Input bar container */
+
+inputbar {
+  background-color: @background;
+}
+
+
+/* Prompt (e.g., "run:", etc.) */
+
+prompt {
+  background-color: @background;
+  padding: 8px 10px 8px 0;
+}
+
+
+/* Input field */
+
+entry {
+  background-color: @input;
+  padding: 8px 10px;
+}
+
+
+/* Case sensitivity toggle indicator */
+
+case-indicator {
+  background-color: @background;
+  padding: 8px 0 8px 10px;
+}
+
+
+/* List item container */
+
+listview {
+  background-color: @background;
+  margin: 10px 0 0 0;
+  scrollbar: @scrollbar;
+}
+
+
+/* List item */
+
+element {
+  padding: 5px;
+}
+
+element.normal {
+  background-color: @background-dim;
+}
+
+element.alternate {
+  background-color: @background;
+}
+
+element.selected {
+  background-color: @accent;
+}
+
+
+/* Scrollbar */
+
+scrollbar {
+  background-color: @input;
+  handle-color: @foreground-dim;
+}

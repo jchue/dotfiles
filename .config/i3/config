@@ -21,10 +21,13 @@ set $mod Mod4
 
 font -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
 
+# Padding for window title
+for_window [class=".*"] title_format " %title"
+
 # Borders
 
-default_border pixel 0
-default_floating_border pixel 0
+default_border pixel 20
+default_floating_border pixel 20
 
 # Gaps
 
@@ -34,9 +37,9 @@ gaps outer 10
 # Colors
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #141414 #141414 #a8a397 #141414   #141414
+client.focused          #191919 #191919 #a8a397 #141414   #191919
 client.focused_inactive #141414 #141414 #a8a397 #141414   #141414
-client.unfocused        #0a0a0a #0a0a0a #414140 #0a0a0a   #0a0a0a
+client.unfocused        #0a0a0a #0a0a0a #414140 #0a0a0a   #141414
 client.urgent           #2f343a #900000 #ffffff #900000   #900000
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
@@ -200,7 +203,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Set resolution
-exec --no-startup-id "xrandr --output Virtual-1 --mode 1280x768"
+exec --no-startup-id "xrandr --output Virtual-1 --mode 1920x1080"
 
 # Set background
 exec --no-startup-id xsetroot -solid "#090909"

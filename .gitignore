@@ -4,21 +4,31 @@
 !README.md
 
 !.config
+
 !.config/alacritty
 !.config/alacritty/*
+
 !.config/gtk-3.0
 !.config/gtk-3.0/*
+
 !.config/i3
 !.config/i3/*
+
 !.config/i3status
 !.config/i3status/*
+
 !.config/polybar
 !.config/polybar/*
 
+!.config/rofi
+!.config/rofi/*
+
 !.local
 !.local/share
+
 !.local/share/konsole
 !.local/share/konsole/*
+
 !.local/share/fonts
 !.local/share/fonts/scientifica
 !.local/share/fonts/scientifica/*

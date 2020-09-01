@@ -5,3 +5,4 @@
 - **Bar:** polybar
 - **Terminal:** Alacritty
 - **File Manager:** Thunar
+- **Application Launcher:** Rofi

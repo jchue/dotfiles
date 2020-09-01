@@ -17,8 +17,12 @@
 
 !.local
 !.local/share
-!.local/share/konsole/
+!.local/share/konsole
 !.local/share/konsole/*
+!.local/share/fonts
+!.local/share/fonts/scientifica
+!.local/share/fonts/scientifica/*
+!.local/share/fonts/scientifica/*/*
 
 !.thunderbird
 !.thunderbird/.default-release

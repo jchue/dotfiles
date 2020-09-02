@@ -9,64 +9,15 @@
 
 ## Colors
 
-<table>
-<thead>
-<tr>
-<th>Color</th>
-<th>Normal</th>
-<th>Bright</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Foreground</td>
-<td bgcolor="#a8a397"><font color="#141414">#a8a397</font></td>
-<td bgcolor="#d8d3c7"><font color="#141414">#d8d3c7</font></td>
-</tr>
-<tr>
-<td>Background</td>
-<td bgcolor="#141414"><font color="#a8a397">#141414</font></td>
-<td bgcolor="#191919"><font color="#a8a397">#191919</font></td>
-</tr>
-<tr>
-<td>Black</td>
-<td bgcolor="#1d2021"><font color="#a8a397">#1d2021</font></td>
-<td bgcolor="#363a3c"><font color="#a8a397">#363a3c</font></td>
-</tr>
-<tr>
-<td>Red</td>
-<td bgcolor="#491915"><font color="#a8a397">#491915</font></td>
-<td bgcolor="#927572"><font color="#141414">#927572</font></td>
-</tr>
-<tr>
-<td>Green</td>
-<td bgcolor="#5f5a2f"><font color="#a8a397">#5f5a2f</font></td>
-<td bgcolor="#a1a6a0"><font color="#141414">#a1a6a0</font></td>
-</tr>
-<tr>
-<td>Yellow</td>
-<td bgcolor="#845d2b"><font color="#a8a397">#845d2b</font></td>
-<td bgcolor="#cdc4b8"><font color="#141414">#cdc4b8</font></td>
-</tr>
-<tr>
-<td>Blue</td>
-<td bgcolor="#1e2c37"><font color="#a8a397">#1e2c37</font></td>
-<td bgcolor="#636c75"><font color="#a8a397">#636c75</font></td>
-</tr>
-<tr>
-<td>Magenta</td>
-<td bgcolor="#52536b"><font color="#a8a397">#52536b</font></td>
-<td bgcolor="#9596a9"><font color="#141414">#9596a9</font></td>
-</tr>
-<tr>
-<td>Cyan</td>
-<td bgcolor="#2c3632"><font color="#a8a397">#2c3632</font></td>
-<td bgcolor="#52645d"><font color="#a8a397">#52645d</font></td>
-</tr>
-<tr>
-<td>White</td>
-<td bgcolor="#a8a397"><font color="#141414">#a8a397</font></td>
-<td bgcolor="#d8d3c7"><font color="#141414">#d8d3c7</font></td>
-</tr>
-</tbody>
-</table>
+|Color      |Normal                                                                    |Bright                                                                    |
+|-----------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
+|Foreground |![#a8a397](https://via.placeholder.com/15/a8a397/000000?text=+) `#a8a397` |![#d8d3c7](https://via.placeholder.com/15/d8d3c7/000000?text=+) `#d8d3c7` |
+|Background |![#141414](https://via.placeholder.com/15/141414/000000?text=+) `#141414` |![#191919](https://via.placeholder.com/15/191919/000000?text=+) `#191919` |
+|Black      |![#1d2021](https://via.placeholder.com/15/1d2021/000000?text=+) `#1d2021` |![#363a3c](https://via.placeholder.com/15/363a3c/000000?text=+) `#363a3c` |
+|Red        |![#491915](https://via.placeholder.com/15/491915/000000?text=+) `#491915` |![#927572](https://via.placeholder.com/15/927572/000000?text=+) `#927572` |
+|Green      |![#5f5a2f](https://via.placeholder.com/15/5f5a2f/000000?text=+) `#5f5a2f` |![#a1a6a0](https://via.placeholder.com/15/a1a6a0/000000?text=+) `#a1a6a0` |
+|Yellow     |![#845d2b](https://via.placeholder.com/15/845d2b/000000?text=+) `#845d2b` |![#cdc4b8](https://via.placeholder.com/15/cdc4b8/000000?text=+) `#cdc4b8` |
+|Blue       |![#1e2c37](https://via.placeholder.com/15/1e2c37/000000?text=+) `#1e2c37` |![#636c75](https://via.placeholder.com/15/636c75/000000?text=+) `#636c75` |
+|Magenta    |![#52536b](https://via.placeholder.com/15/52536b/000000?text=+) `#52536b` |![#9596a9](https://via.placeholder.com/15/9596a9/000000?text=+) `#9596a9` |
+|Cyan       |![#2c3632](https://via.placeholder.com/15/2c3632/000000?text=+) `#2c3632` |![#52645d](https://via.placeholder.com/15/52645d/000000?text=+) `#52645d` |
+|White      |![#a8a397](https://via.placeholder.com/15/a8a397/000000?text=+) `#a8a397` |![#d8d3c7](https://via.placeholder.com/15/d8d3c7/000000?text=+) `#d8d3c7` |

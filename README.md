@@ -21,3 +21,16 @@
 |Magenta    |![#52536b](https://via.placeholder.com/15/52536b/000000?text=+) `#52536b` |![#9596a9](https://via.placeholder.com/15/9596a9/000000?text=+) `#9596a9` |
 |Cyan       |![#2c3632](https://via.placeholder.com/15/2c3632/000000?text=+) `#2c3632` |![#52645d](https://via.placeholder.com/15/52645d/000000?text=+) `#52645d` |
 |White      |![#a8a397](https://via.placeholder.com/15/a8a397/000000?text=+) `#a8a397` |![#d8d3c7](https://via.placeholder.com/15/d8d3c7/000000?text=+) `#d8d3c7` |
+
+## Installation
+
+### Firefox
+
+Custom styles can be found at `$HOME/.mozilla/firefox/<profile_id>.default-release/chrome/userChrome.css`, where `<profile_id>` is a random string. Therefore, the `chrome` directory in this repository is under a directory named merely `.default-release`, requiring a symbolic link:
+
+
+```bash
+ln -s $HOME/.mozilla/firefox/.default-release/chrome $HOME/.mozilla/firefox/<profile_id>.default-release/chrome
+```
+
+Then ensure `toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true` in `about:config`.

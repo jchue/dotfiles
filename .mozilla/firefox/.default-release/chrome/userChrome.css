@@ -1,0 +1,146 @@
+* {
+  --foreground: #a8a397;
+  --background: #141414;
+  --background-bright: #191919;
+  --background-dim: #0a0a0a;
+  --black: #1d2021;
+  --black-bright: #363a3c;
+  --red: #491915;
+  --green: #5f5a2f;
+  --yellow: #845d2b;
+  --blue: #1e2c37;
+  --magenta: #52536b;
+  --cyan: #2c3632;
+  --white: #a8a397;
+  
+  font-family: scientifica, monospace;
+  
+  /* Tabs */
+  
+  --tab-min-height: 5px !important;
+  --tabs-border-color: var(--background-bright) !important; /* tab border*/
+  --tab-line-color: var(--yellow) !important; /* Active tab top border */
+  --tabs-navbar-shadow-size: 0 !important; /* Top border of navigation bar */
+
+  /* Navigation */
+  
+  --toolbar-bgcolor: var(--background-bright) !important; /* Active tab and navigation bar background color */
+  --toolbar-field-background-color: var(--background-dim) !important; /* URL field background color */
+  --toolbar-field-border-color: var(--background-dim) !important; /* URL field border color */
+  
+  --urlbar-container-height: 30px !important; /* URL section */
+  --urlbar-toolbar-height: 30px !important; /* Used for vertical centering calculation of urlbar */
+  --urlbar-height: 25px !important; /* URL field */
+  
+  /* Buttons in navigation bar */
+  
+  --toolbarbutton-icon-fill: var(--foreground) !important;
+  --toolbarbutton-icon-fill-opacity: 1 !important; /* SVG icon opacity */
+  
+  --toolbarbutton-outer-padding: 0 !important; /* button padding - for SVG, only x-axis */
+  --toolbarbutton-inner-padding: 7px !important; /* padding for SVG icons */
+  --toolbarbutton-border-radius: 0 !important; /* URL field border radius */
+  
+  --backbutton-background: transparent !important;
+  --backbutton-hover-background: var(--black-bright) !important;
+  --backbutton-active-background: var(--background) !important;
+  --toolbarbutton-hover-background: var(--black-bright) !important;
+  --toolbarbutton-active-background: var(--background) !important;
+  
+  /* Header bottom border */
+  
+  --chrome-content-separator-color: var(--background-bright) !important;
+}
+
+/* Tabs */
+#TabsToolbar {
+  background-color: var(--background) !important;
+}
+
+/* Favicon */
+.tab-icon-image {
+  opacity: 0.5 !important;
+}
+
+/* Tab close button */
+.tab-close-button {
+  height: 15px !important;
+  opacity: 0.5 !important;
+  width: 15px !important;
+}
+
+/* Nonactive tab hover top border */
+.tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected="true"]):not([multiselected]) {
+  background-color: var(--cyan) !important;
+}
+
+/* Nonactive tab hover background */
+.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]) {
+  background-color: var(--background-bright) !important;
+}
+
+/* Navigation bar */
+#nav-bar {
+  box-shadow: none !important;
+}
+
+.toolbarbutton-1 {
+  fill: var(--toolbarbutton-icon-fill) !important;
+  opacity: 1 !important;
+}
+
+.toolbarbutton-1[disabled="true"] {
+  opacity: 0.3 !important;
+}
+
+.toolbarbutton-icon {
+  border: none !important;
+  border-radius: 0 !important;
+  height: var(--urlbar-height) !important;
+  opacity: 0.5 !important;
+  padding: var(--toolbarbutton-inner-padding) !important;
+  width: var(--urlbar-height) !important;
+}
+
+/* Extension buttons */
+.toolbarbutton-1 > .toolbarbutton-badge-stack {
+  padding: 0 !important;
+}
+
+.toolbarbutton-1 > .toolbarbutton-badge-stack > vbox {
+  padding: var(--toolbarbutton-inner-padding) !important;
+}
+
+/* Firefox account icon */
+#fxa-avatar-image {
+  height: calc(var(--urlbar-height) - (var(--toolbarbutton-inner-padding) * 2 )) !important;
+  opacity: 0.5 !important;
+  width: calc(var(--urlbar-height) - (var(--toolbarbutton-inner-padding) * 2 )) !important;
+}
+
+/* Separator */
+
+:root:not([uidensity="compact"]):not([chromehidden~="toolbar"]) #nav-bar > #PanelUI-button {
+  border-image-source: linear-gradient(transparent 10px, var(--black-bright) 10px, var(--black-bright) calc(100% - 10px), transparent calc(100% - 10px)) !important;
+}
+
+/* Icons inside URL field */
+.sharing-icon,
+#identity-icon,
+#permissions-granted-icon,
+#tracking-protection-icon,
+.notification-anchor-icon,
+#blocked-permissions-container > .blocked-permission-icon {
+  padding: 3px !important;
+}
+
+/* URL field */
+#urlbar {
+  min-height: var(--urlbar-height) !important;
+}
+
+/* URL field visual */
+#urlbar-background {
+  background-color: var(--toolbar-field-background-color) !important;
+  border-color: var(--toolbar-field-border-color) !important;
+}

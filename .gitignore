@@ -31,6 +31,9 @@
 !.config/spicetify/Themes/*
 !.config/spicetify/Themes/*/*
 
+!.config/picom
+!.config/picom/*
+
 !.local
 !.local/share
 

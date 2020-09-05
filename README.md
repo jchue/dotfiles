@@ -2,10 +2,13 @@
 
 - **OS:** Arch
 - **WM:** i3-gaps
+- **Compositor:** picom
 - **Bar:** polybar
 - **Terminal:** Alacritty
 - **File Manager:** Thunar
 - **Application Launcher:** Rofi
+- **Web Browser:** Firefox
+- **Music Player:** Spotify with Spicetify
 
 ## Colors
 

@@ -23,6 +23,14 @@
 !.config/rofi
 !.config/rofi/*
 
+!.config/spicetify
+!.config/spicetify/config.ini
+!.config/spicetify/Extensions
+!.config/spicetify/Extensions/*
+!.config/spicetify/Themes
+!.config/spicetify/Themes/*
+!.config/spicetify/Themes/*/*
+
 !.local
 !.local/share
 

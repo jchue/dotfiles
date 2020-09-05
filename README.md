@@ -34,3 +34,12 @@ ln -s $HOME/.mozilla/firefox/.default-release/chrome $HOME/.mozilla/firefox/<pro
 ```
 
 Then ensure `toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true` in `about:config`.
+
+### Spicetify
+
+After installation, ensure read and write permissions are enabled for the following directories (or wherever the Spotify client is located)::
+
+```bash
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+```

@@ -13,6 +13,7 @@
   --cyan: #2c3632;
   --white: #a8a397;
   
+  color: var(--foreground) !important;
   font-family: scientifica, monospace;
   
   /* Tabs */
@@ -31,6 +32,9 @@
   --urlbar-container-height: 30px !important; /* URL section */
   --urlbar-toolbar-height: 30px !important; /* Used for vertical centering calculation of urlbar */
   --urlbar-height: 25px !important; /* URL field */
+
+  --autocomplete-popup-highlight-background: var(--cyan) !important; /* Selected entry background for URL autocomplete */
+  --autocomplete-popup-highlight-color: var(--foreground) !important; /* Selected entry for URL autocomplete */
   
   /* Buttons in navigation bar */
   
@@ -51,6 +55,7 @@
   
   --chrome-content-separator-color: var(--background-bright) !important;
 }
+
 
 /* Tabs */
 #TabsToolbar {
@@ -138,6 +143,12 @@
 #urlbar {
   min-height: var(--urlbar-height) !important;
 }
+
+#urlbar-input::-moz-selection {
+    background-color: #222423 !important;
+    color: var(--yellow) !important;
+}
+
 
 /* URL field visual */
 #urlbar-background {

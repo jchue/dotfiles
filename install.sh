@@ -10,7 +10,7 @@ ln -si $dotfiles/.config/spicetify/config.ini $HOME/.config/spicetify/config.ini
 spicetify backup apply
 
 # Firefox
-for directory in $(ls -a .mozilla/firefox/); do
+for directory in $(ls -a $HOME/.mozilla/firefox/); do
     if [[ $directory == *".default-release"* ]]; then
         firefox_profile=$directory
     fi

@@ -20,3 +20,4 @@ ln -sT $dotfiles/.mozilla/firefox/.default-release/chrome $HOME/.mozilla/firefox
 
 # Vim
 ln -sT $dotfiles/.vim/colors $HOME/.vim/colors
+ln -si $dotfiles/.vimrc $HOME/.vimrc

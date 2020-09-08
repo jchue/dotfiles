@@ -9,9 +9,8 @@ ColorCursorForeground=#a8a397
 ColorCursor=#a8a397
 ColorCursorUseDefault=FALSE
 
-ColorSelection=#a8a397
-ColorSelectionBackground=#2c3632
-ColorSelectionUseDefault=TRUE
+ColorSelectionBackground=#222423
+ColorSelectionUseDefault=FALSE
 
 ColorBold=#a8a397
 ColorBoldUseDefault=FALSE

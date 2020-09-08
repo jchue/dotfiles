@@ -13,8 +13,8 @@
   --cyan: #2c3632;
   --white: #a8a397;
   
-  color: var(--foreground) !important;
-  font-family: scientifica, monospace;
+  font-family: scientifica, monospace !important;
+  font-size: 11px !important;
   
   /* Tabs */
   

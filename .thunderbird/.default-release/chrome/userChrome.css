@@ -1,28 +1,82 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* set default namespace to XUL */
 
+:root {
+    --foreground: #a8a397;
+    --background: #141414;
+    --black: #1d2021;
+    --red: #491915;
+    --green: #5f5a2f;
+    --yellow: #845d2b;
+    --blue: #1e2c37;
+    --magenta: #52536b;
+    --cyan: #2c3632;
+    --white: #a8a397;
+}
+
 /* Font size for:
 Mail: Folder tree and message list
-Address Book: Directory Tree and contact list */
+Address Book: Directory Tree and contact list
 #folderTree,
 #threadTree,
 #dirTree,
 #abResultsTree {
   font-size: 14px !important;
 }
+*/
 
-/* Spacing for:
-Mail: Folder list */
+
+/********************
+ * MAIL
+ ********************/
+
+
+/* Hover and selected rows */
+
+treechildren::-moz-tree-row(hover) {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+treechildren::-moz-tree-row(selected) {
+    background-color: var(--cyan) !important;
+}
+
+
+/* Folder list */
 #folderTree treechildren::-moz-tree-row,
 #dirTree treechildren::-moz-tree-row {
-  min-height: 30px !important;
+  min-height: 20px !important;
 }
 
-/* Spacing for:
-Mail: Message list */
-#threadTree treechildren::-moz-tree-row {
-  min-height: 50px !important;
+/* Folders with new and unread messages */
+#folderTree treechildren::-moz-tree-cell-text(isServer-true, biffState-NewMail),
+#folderTree treechildren::-moz-tree-cell-text(folderNameCol, newMessages-true),
+#folderTree treechildren::-moz-tree-cell-text(folderNameCol, hasUnreadMessages-true)/*,
+#folderTree treechildren::-moz-tree-cell-text(folderNameCol, subfoldersHaveUnreadMessages-true)*/ {
+    color: var(--yellow) !important;
 }
+
+
+/* Message list */
+
+#threadTree treechildren::-moz-tree-row {
+    background-color: var(--background);
+    min-height: 30px !important;
+}
+
+#threadTree treechildren::-moz-tree-row(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+/* Unread messages */
+#threadTree treechildren::-moz-tree-cell-text(unread) {
+    color: var(--yellow) !important;
+}
+
+
+/********************
+ * ADDRESS BOOK
+ ********************/
 
 /* Spacing for:
 Address Book: Contact list */

@@ -18,9 +18,21 @@ done
 
 ln -sT $dotfiles/.mozilla/firefox/.default-release/chrome $HOME/.mozilla/firefox/$firefox_profile/chrome
 
+# Thunderbird
+for directory in $(ls -a $HOME/.thunderbird); do
+    if [[ $directory == *".default-release"* ]]; then
+        thunderbird_profile=$directory
+    fi
+done
+
+ln -sT $dotfiles/.thunderbird/.default-release/chrome $HOME/.thunderbird/$thunderbird_profile/chrome
+
 # Vim
 ln -sT $dotfiles/.vim/colors $HOME/.vim/colors
 ln -si $dotfiles/.vimrc $HOME/.vimrc
 
 # Xfce Terminal
 ln -sT $dotfiles/.local/share/xfce4/terminal/colorschemes $HOME/.local/share/xfce4/terminal/colorschemes
+
+# Themes
+ln -sT $dotfiles/.themes $HOME/.themes

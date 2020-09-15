@@ -12,10 +12,7 @@
   --magenta: #52536b;
   --cyan: #2c3632;
   --white: #a8a397;
-  
-  font-family: scientifica, monospace !important;
-  font-size: 11px !important;
-  
+  /
   /* Tabs */
   
   --tab-min-height: 5px !important;

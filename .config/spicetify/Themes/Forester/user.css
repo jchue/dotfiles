@@ -1,5 +1,12 @@
 :root {
 	--bar-height: 120px;
+  --background: #141414;
+  --yellow: #845d2b;
+  --cyan: #2c3632;
+}
+
+body {
+  font-size: 11px;
 }
 
 /*Round corner cover image*/
@@ -14,8 +21,8 @@
 
 /*Hide some annoying elements like profile name and pic, upgrade button and device connect bar at bottom, new playlist button*/
 .profile.content-top-bar__profile-link,
-.upgrade-button,
-.view-player .remote-playback-bar,
+/*.upgrade-button,
+.view-player .remote-playback-bar,*/
 .LeftSidebarNewPlaylistButton__button {
 	display: none !important;
 }
@@ -166,10 +173,24 @@
 /*
 Hide the song duration and elapsed text. I dont know where to put those so I just hide them
 */
+.view-player .player-controls-container .progress-container {
+  background-color: var(--background);
+}
+
 .view-player .player-controls-container .progress-container .elapsed,
 .view-player .player-controls-container .progress-container .remaining {
 	display: none !important;
 }
+
+.view-player .player-controls-container .progress-container:hover {
+  padding: 5px 0;
+}
+
+.view-player .player-controls-container .progress-container:hover .elapsed,
+.view-player .player-controls-container .progress-container:hover .remaining {
+	display: block !important;
+}
+
 
 /* Add round corner for Gerne and Mood cards */
 .gc-image-container,
@@ -272,6 +293,39 @@ Button with text Play
 /*
 Change text color in playlist
 */
+
+.Table[data-ta-id="track-list"] .TableRow:nth-child(even),
+.tl-row:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.Table[data-ta-id="track-list"] .TableRow:hover,
+.tl-row:hover .tl-cell {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.Table[data-ta-id="track-list"] .TableRow--is-selected,
+.tl-row.selected .tl-cell {
+  background-color: var(--cyan);
+}
+
+.tl-row.current .tl-cell:not(.tl-number),
+.tl-row.current .tl-cell a:link,
+.tl-row.current .tl-highlight {
+  color: var(--yellow) !important;
+}
+
+.Table[data-ta-id="track-list"] .TableRow,
+.tl-cell {
+  height: auto;
+}
+
+.Table[data-ta-id="track-list"] .TableCell,
+.tl-cell__content {
+  font-size: inherit;
+  line-height: 20px;
+}
+
 .tl-explicit .label,
 .tl-premium .label,
 .tl-cell:not(.tl-number),
@@ -472,10 +526,6 @@ body:not(.body-container--windows) .content-top-bar__profile-menu-button .dropdo
 
 .card-horizontal-interior-wrapper .card-info-title {
 	text-align: start !important;
-}
-
-.tl-row.selected:hover .tl-cell {
-	background: var(--modspotify_scrollbar_fg_and_selected_row_bg) !important;
 }
 
 .GlueTableRow--is-selected {

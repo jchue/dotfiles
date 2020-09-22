@@ -1,17 +1,17 @@
 @define-color base00 #141414;
 @define-color base01 #1c1c1c;
 @define-color base02 #222423;
-@define-color base03 #363a3c
+@define-color base03 #363a3c;
 @define-color base04 #414140;
 @define-color base05 #a8a397;
 @define-color base06 #d8d3c7;
 @define-color base07 #d8d3c7;
-@define-color base08 #491915;
+@define-color base08 #5c201b;
 @define-color base09 #70341a;
 @define-color base0A #845d2b;
 @define-color base0B #5f5a2f;
 @define-color base0C #2c3632;
-@define-color base0D #1e2c37;
+@define-color base0D #253847;
 @define-color base0E #52536b;
 @define-color base0F #4a2d1b;
 
@@ -27,7 +27,7 @@
 @define-color white @base07;
 
 @define-color background-bright @base01;
-@define-color background-dim #0a0a0a;
+@define-color background-dim #0f0f0f;
 @define-color foreground-dim @base04;
 
 
@@ -95,7 +95,7 @@
 }
 
 separator {
-    background-color: @background-bright;
+    background-color: shade(@background-bright, 1.3);
 }
 
 .frame {
@@ -113,7 +113,7 @@ separator {
 }
 
 .view:hover {
-    background-color: @selected_bg_color;
+    background-color: shade(@background-bright,1.3);
 }
 
 .view:selected {
@@ -121,10 +121,12 @@ separator {
 }
 
 /* Highlighted text */
-selection {
+selection,
+text:selected {
     background-color: #222423;
-    color: @yellow;
+    color: @green;
 }
+
 
 /* Progress bar */
 
@@ -152,21 +154,33 @@ value {
 /* Menus */
 
 /* Top-level menu bars */
+menubar {
+  background-color: background;
+}
+
 menubar > menuitem {
     padding: 5px 10px;
 }
 
+menubar > menuitem:hover {
+  background-color: shade(@background, 1.3);
+}
+
 /* Dropdown-style menus */
+menu {
+  background-color: @background-bright;
+}
+
 menu > menuitem {
   padding: 5px 10px;
 }
 
-menuitem image {
-  -gtk-icon-transform: scale(0.8);
+menu > menuitem:hover {
+  background-color: shade(@background-bright, 1.3);
 }
 
-menuitem:hover {
-    background-color: @background-bright;
+menuitem image {
+  -gtk-icon-transform: scale(0.8);
 }
 
 menuitem:disabled {
@@ -223,6 +237,10 @@ entry:focus {
   border-color: @cyan;
 }
 
+entry image {
+  margin-right: 10px;
+}
+
 
 /* Dropdowns */
 
@@ -271,20 +289,25 @@ buttonbox button:last-of-type {
   magin-right: 0;
 }
 
+button:hover,
 button.default:hover,
 button.text-button:hover,
 buttonbox button:hover {
-  background-color: shade(@background-bright, 1.5);
-  border-color: shade(@background-bright, 1.5);
+  background-color: @selected_bg_color;
+  border-color: @selected_bg_color;
+  opacity: 0.5;
 }
 
+button:active,
 button.default:active,
 button.text-button:active,
 buttonbox button:active {
-  background-color: shade(@background-bright, 0.85);
-  border-color: shade(@background-bright, 0.85);
+  background-color: @background-dim;
+  border-color: @background-dim;
+  opacity: 0.2;
 }
 
+button:focus,
 button.default:focus,
 button.text-button:focus,
 buttonbox button:focus {
@@ -330,7 +353,7 @@ window.thunar toolbar#location-toolbar widget.path-bar {
 
 /* Sidebar */
 
-window.thunar scrolledwindow.sidebar {
+window.thunar scrolledwindow.sidebar treeview.view {
   background-color: @background;
 }
 
@@ -345,12 +368,12 @@ window.thunar scrolledwindow.sidebar treeview.view:selected {
 
 /* File explorer pane */
 
-window.thunar scrolledwindow.frame.standard-view {
-  background-color: shade(@background, 0.8);
+window.thunar scrolledwindow.frame.standard-view .view {
+  background-color: @background-dim;
 }
 
 window.thunar scrolledwindow.frame.standard-view .view:hover {
-  background-color: @background;
+  background-color: shade(@background-dim, 1.3);
 }
 
 window.thunar scrolledwindow.frame.standard-view .view:selected {
@@ -359,6 +382,7 @@ window.thunar scrolledwindow.frame.standard-view .view:selected {
 
 /* view as detailed list column headers */
 window.thunar scrolledwindow.frame.standard-view treeview.view header button {
+  background-color: @background-dim;
   border-right: 1px solid @background;
   border-bottom: 1px solid @background;
   color: @foreground;
@@ -366,14 +390,42 @@ window.thunar scrolledwindow.frame.standard-view treeview.view header button {
 }
 
 
-/* Bar */
+/* Whisker menu categries and system control buttons */
 
-.xfce4-panel widget button:hover {
-  background-color: @selected_bg_color;
-  opacity: 0.5;
+#whiskermenu-window {
+  background-color: @background-bright;
 }
 
-.xfce4-panel widget button:active {
-  background-color: @background-dim;
-  opacity: 0.2;
+#whiskermenu-window button:hover {
+  background-color: shade(@background-bright, 1.3);
+}
+
+
+/* Whisker menu categries */
+
+#whiskermenu-window viewport.frame box.vertical button {
+  padding: 2px 10px;
+}
+
+#whiskermenu-window viewport.frame box.vertical button image {
+  -gtk-icon-transform: scale(0.6);
+}
+
+
+/* User and system controls */
+
+#whiskermenu-window box.horizontal box.horizontal button {
+  padding: 10px;
+}
+
+
+/* Application list */
+#whiskermenu-window treeview {
+  background-color: @background;
+  padding: 2px 10px;
+}
+
+#whiskermenu-window treeview:hover {
+  background-color: shade(@background, 1.3);
+  color: @foreground-dim;
 }

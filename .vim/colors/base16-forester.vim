@@ -31,8 +31,8 @@ let s:gui06        = "d8d3c7"
 let g:base16_gui06 = "d8d3c7"
 let s:gui07        = "d8d3c7"
 let g:base16_gui07 = "d8d3c7"
-let s:gui08        = "491915"
-let g:base16_gui08 = "491915"
+let s:gui08        = "5c201b"
+let g:base16_gui08 = "5c201b"
 let s:gui09        = "70341a"
 let g:base16_gui09 = "70341a"
 let s:gui0A        = "845d2b"
@@ -41,8 +41,8 @@ let s:gui0B        = "5f5a2f"
 let g:base16_gui0B = "5f5a2f"
 let s:gui0C        = "2c3632"
 let g:base16_gui0C = "2c3632"
-let s:gui0D        = "1e2c37"
-let g:base16_gui0D = "1e2c37"
+let s:gui0D        = "853847"
+let g:base16_gui0D = "853847"
 let s:gui0E        = "52536b"
 let g:base16_gui0E = "52536b"
 let s:gui0F        = "4a2d1b"
@@ -100,18 +100,18 @@ endif
 " Neovim terminal colours
 if has("nvim")
   let g:terminal_color_0 =  "#141414"
-  let g:terminal_color_1 =  "#491915"
+  let g:terminal_color_1 =  "#5c201b"
   let g:terminal_color_2 =  "#5f5a2f"
   let g:terminal_color_3 =  "#845d2b"
-  let g:terminal_color_4 =  "#1e2c37"
+  let g:terminal_color_4 =  "#853847"
   let g:terminal_color_5 =  "#52536b"
   let g:terminal_color_6 =  "#2c3632"
   let g:terminal_color_7 =  "#a8a397"
   let g:terminal_color_8 =  "#363a3c"
-  let g:terminal_color_9 =  "#491915"
+  let g:terminal_color_9 =  "#5c201b"
   let g:terminal_color_10 = "#5f5a2f"
   let g:terminal_color_11 = "#845d2b"
-  let g:terminal_color_12 = "#1e2c37"
+  let g:terminal_color_12 = "#853847"
   let g:terminal_color_13 = "#52536b"
   let g:terminal_color_14 = "#2c3632"
   let g:terminal_color_15 = "#d8d3c7"
@@ -124,18 +124,18 @@ if has("nvim")
 elseif has("terminal")
   let g:terminal_ansi_colors = [
         \ "#141414",
-        \ "#491915",
+        \ "#5c201b",
         \ "#5f5a2f",
         \ "#845d2b",
-        \ "#1e2c37",
+        \ "#853847",
         \ "#52536b",
         \ "#2c3632",
         \ "#a8a397",
         \ "#363a3c",
-        \ "#491915",
+        \ "#5c201b",
         \ "#5f5a2f",
         \ "#845d2b",
-        \ "#1e2c37",
+        \ "#853847",
         \ "#52536b",
         \ "#2c3632",
         \ "#d8d3c7",

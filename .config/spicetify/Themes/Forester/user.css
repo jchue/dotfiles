@@ -6,7 +6,8 @@
 }
 
 body {
-  font-size: 11px;
+    font-family: Inconsolata, 'Fira Code', monospace;
+    font-size: 12px;
 }
 
 /*Round corner cover image*/
@@ -317,7 +318,8 @@ Change text color in playlist
 
 .Table[data-ta-id="track-list"] .TableRow,
 .tl-cell {
-  height: auto;
+    border: none;
+    height: auto;
 }
 
 .Table[data-ta-id="track-list"] .TableCell,
@@ -577,7 +579,7 @@ span.glue-page-header__title-text {
 
 .glue-page-header__content-inner,
 .glue-page-header__data,
-.glue-page-header__title,
+.glue-page-header__title:hover,
 .Header__content-inner,
 .Header__data,
 .Header__title,

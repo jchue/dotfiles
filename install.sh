@@ -2,6 +2,12 @@
 
 dotfiles="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
+# i3
+ln -sT $dotfiles/.config/i3 $HOME/.config/i3
+
+# picom
+ln -sT $dotfiles/.config/picom $HOME/.config/picom
+
 # Spicetify
 ln -sT $dotfiles/.config/spicetify/Extensions $HOME/.config/spicetify/Extensions
 ln -sT $dotfiles/.config/spicetify/Themes $HOME/.config/spicetify/Themes
@@ -36,3 +42,6 @@ ln -sT $dotfiles/.local/share/xfce4/terminal/colorschemes $HOME/.local/share/xfc
 
 # Themes
 ln -sT $dotfiles/.themes $HOME/.themes
+
+# VS Code
+ln -sT $dotfiles/.vscode-oss/extensions $HOME/.vscode-oss/extensions # Will vary depending on VS Code version

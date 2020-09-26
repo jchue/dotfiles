@@ -1,8 +1,10 @@
 :root {
 	--bar-height: 120px;
-  --background: #141414;
-  --yellow: #845d2b;
-  --cyan: #2c3632;
+    --background: #141414;
+    --yellow: #845d2b;
+    --cyan: #2c3632;
+
+    --background-bright: #1c1c1c;
 }
 
 body {
@@ -127,10 +129,6 @@ body {
 	background-color: rgba(var(--modspotify_rgb_scrollbar_fg_and_selected_row_bg), 0.5) !important;
 	border-radius: 4px !important;
 	padding-left: 34px;
-}
-
-.sidebar:hover .sidebar-navbar.sidebar-scroll-element {
-	opacity: 1!important;
 }
 
 .view-player .player-controls-container,
@@ -291,6 +289,72 @@ Button with text Play
 	color: var(--modspotify_main_bg) !important;
 }
 
+
+/* Sidebar
+ * SidebarListItem: Primary items
+ * RootlistItem: Playlists */
+
+.sidebar:hover .sidebar-navbar.sidebar-scroll-element {
+opacity: 1!important;
+}
+
+.SidebarListItem--is-active:after,
+.RootlistItem--is-active:after {
+    background-color: transparent;
+    background-image: linear-gradient(90deg, var(--modspotify_sidebar_indicator_and_hover_button_bg) , transparent);
+    opacity: 0.2;
+    bottom: unset;
+    top: 5%;
+    height: 90%;
+    width: 100%
+}
+ 
+.SidebarListItem:hover,
+.RootlistItem:hover {
+    background-color: rgba(255, 255, 255, 0.025);
+}
+
+
+/* Main Content */
+
+.Header__content-wrapper {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.playlist-content#tracklist-container, /* Playlists */
+.AlbumRoot__content .glue-page-wrapper /* Album */ {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.tl-header th,
+.tl-cell {
+    padding: 0 0 0 10px;
+}
+
+/* Play button column for each track */
+
+.tl-play {
+    width: 30px !important;
+}
+
+.tl-row .button-play {
+    height: 20px;
+    width: 20px;
+}
+
+.tl-row .button-play::before {
+    font-size: 10px !important;
+    line-height: 20px !important;
+    padding-left: 25% !important;
+}
+
+/* For albums */
+.TableCellTrackNumber__button-wrapper .CanonicalButton {
+    --button-size: 20px !important;
+}
+
 /*
 Change text color in playlist
 */
@@ -317,6 +381,7 @@ Change text color in playlist
 }
 
 .Table[data-ta-id="track-list"] .TableRow,
+.TableCell,
 .tl-cell {
     border: none;
     height: auto;
@@ -340,6 +405,33 @@ Change text color in playlist
 .tl-row.unavailable .tl-cell a:link,
 .tl-row.unavailable .tl-highlight {
   color: var(--modspotify_preserve_1) !important;
+}
+
+
+/********************
+ * PLAYER
+ ********************/
+
+/* "Listening on" bar */
+
+.view-player .remote-playback-bar {
+    background-color: var(--yellow);
+    height: 20px;
+    line-height: 20px;
+}
+
+.view-player .remote-playback-bar .arrow {
+    border: 5px solid transparent;
+    border-bottom-color: var(--yellow);
+}
+
+.view-player .remote-playback-bar p {
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+
+.spoticon-spotify-connect-16::before {
+    font-size: inherit;
 }
 
 .card-type-album .card-info-title,
@@ -715,17 +807,6 @@ span.glue-page-header__title-text {
 
 body.remotebar .view-player .player-bar-wrapper {
 	height: 100%;
-}
-
-.SidebarListItem--is-active:after,
-.RootlistItem--is-active:after {
-	background-color: transparent;
-	background-image: linear-gradient(90deg, var(--modspotify_sidebar_indicator_and_hover_button_bg) , transparent);
-	opacity: 0.2;
-	bottom: unset;
-	top: 5%;
-	height: 90%;
-	width: 100%
 }
 
 .Header__image-inner {

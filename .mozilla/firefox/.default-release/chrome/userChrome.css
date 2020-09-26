@@ -144,7 +144,7 @@
 
 #urlbar-input::-moz-selection {
     background-color: #222423 !important;
-    color: var(--yellow) !important;
+    color: var(--green) !important;
 }
 
 

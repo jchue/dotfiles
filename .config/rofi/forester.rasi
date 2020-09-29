@@ -3,16 +3,16 @@
   forester-foreground: #a8a397;
   forester-foreground-dim: #414140;
   forester-background: #141414;
-  forester-background-bright: #191919;
-  forester-background-dim: #0a0a0a;
+  forester-background-bright: #1c1c1c;
+  forester-background-dim: #0f0f0f;
   forester-black: #1d2021;
-  forester-red: #491915;
+  forester-red: #5c201b;
   forester-green: #5f5a2f;
   forester-yellow: #845d2b;
-  forester-blue: #1e2c37;
+  forester-blue: #253847;
   forester-magenta: #52536b;
-  forester-cyan: #1c3632;
-  forester-white: @a8a397;
+  forester-cyan: #2c3632;
+  forester-white: #a8a397;
 
   /* Theme colors */
   foreground: @forester-foreground;

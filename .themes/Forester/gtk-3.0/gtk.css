@@ -132,18 +132,20 @@ text:selected {
 
 trough {
   background-color: @background-dim;
+  border-radius: 10px;
   min-height: 5px;
 }
 
 progress,
 highlight {
   background-color: @cyan;
+  border-radius: 10px;
   min-height: 5px;
 }
 
 slider {
-    border: 3px solid white;
-    background-color: white;
+    border: 3px solid @foreground;
+    background-color: @foreground;
 }
 
 value {
@@ -151,11 +153,22 @@ value {
 }
 
 
+/* Window headers */
+
+headerbar.titlebar {
+    background-color: @background;
+}
+
+headerbar button {
+    padding: 5px;
+}
+
+
 /* Menus */
 
 /* Top-level menu bars */
 menubar {
-  background-color: background;
+  background-color: @background;
 }
 
 menubar > menuitem {
@@ -251,17 +264,54 @@ combobox button.combo box {
 }
 
 
-/* Checkboxes */
+/* Checkboxes and radio button */
 
 checkbutton check {
   background-color: @background-dim;
   background-image: none;
   border: none;
   border-radius: 0;
+  margin: 0 5px;
 }
 
-checkbutton check:checked {
-  background-color: @cyan;
+radiobutton radio {
+    background-color: @background-dim;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+radiobutton radio:disabled {
+    background-color: shade(@background-dim, 1.5);
+}
+
+radiobutton:disabled {
+    color: @foreground-dim;
+}
+
+
+/* Toggles */
+
+switch {
+    background-color: @background-dim;
+    border-radius: 50px;
+}
+
+switch:checked,
+switch:active {
+    background-color: @cyan;
+}
+
+switch image {
+    padding: 0 2px;
+    -gtk-icon-transform: scale(0.7);
+}
+
+switch slider {
+    background-color: @foreground;
+    border: none;
+    border-radius: 50px;
+    min-width: 20px;
+    min-height: 20px;
 }
 
 
@@ -279,8 +329,16 @@ buttonbox button {
   margin-right: 2px;
   min-height: 0;
   min-width: 0;
-  padding: 5px 0;
+  padding: 5px;
   text-shadow: none;
+}
+
+button.default:disabled,
+button.text-button:disabled,
+buttonbox button:disabled {
+    background-color: @background-bright;
+    border-color: @background-bright;
+    color: @foreground-dim;
 }
 
 button.default:last-of-type,
@@ -314,6 +372,10 @@ buttonbox button:focus {
   border-color: @cyan;
 }
 
+button.radio:checked {
+    background-color: @cyan;
+    border-color: @cyan;
+}
 
 /* Tab header */
 
@@ -327,7 +389,7 @@ header.top tabs tab {
 }
 
 header.top tabs tab:hover {
-  background-color: @background-bright;
+  background-color: @background-bright;
 }
 
 header.top tabs tab:checked {

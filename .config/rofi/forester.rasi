@@ -17,8 +17,8 @@
   /* Theme colors */
   foreground: @forester-foreground;
   foreground-dim: @forester-foreground-dim;
-  background: @forester-background-bright;
-  background-dim: @forester-background;
+  background: @forester-background;
+  background-dim: @forester-background-dim;
   input: @forester-background-dim;
   accent: @forester-cyan;
 
@@ -73,6 +73,7 @@ listview {
   background-color: @background;
   margin: 10px 0 0 0;
   scrollbar: @scrollbar;
+  spacing: 0;
 }
 
 
@@ -83,11 +84,11 @@ element {
 }
 
 element.normal {
-  background-color: @background-dim;
+  background-color: @background;
 }
 
 element.alternate {
-  background-color: @background;
+  background-color: rgba(255, 255, 255, 0.01);
 }
 
 element.selected {
@@ -98,6 +99,8 @@ element.selected {
 /* Scrollbar */
 
 scrollbar {
-  background-color: @input;
+  background-color: @background-dim;
   handle-color: @foreground-dim;
+  handle-width: 8px;
+  width: 8px;
 }

@@ -279,7 +279,7 @@
         "statusBar.debuggingBackground": "#70341a", //9
         "statusBar.debuggingForeground": "#d8d3c7", //7
         // "statusBar.debuggingBorder": "",
-        "statusBar.noFolderBackground": "#52536b", //E
+        "statusBar.noFolderBackground": "#253847", //E->D
         "statusBar.noFolderForeground": "#d8d3c7", //7
         // "statusBar.noFolderBorder": "",
         "statusBarItem.activeBackground": "#363a3c", //3

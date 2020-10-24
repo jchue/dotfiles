@@ -20,15 +20,15 @@ set $mod Mod4
 #font pango:DejaVu Sans Mono 8
 
 #font -nerdypepper-scientifica-medium-r-normal--11-80-100-100-c-50-iso10646-1
-font pango:Inconsolata 10
+font pango:Cozette 10
 
 # Padding for window title
 for_window [class=".*"] title_format " %title"
 
 # Borders
 
-default_border pixel 20
-default_floating_border pixel 20
+default_border pixel 10
+default_floating_border pixel 10
 
 # Gaps
 
@@ -68,8 +68,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec alacritty
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

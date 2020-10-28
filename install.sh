@@ -11,6 +11,9 @@ ln -sT $dotfiles/.config/picom $HOME/.config/picom
 # rofi
 ln -sT $dotfiles/.config/rofi $HOME/.config/rofi
 
+# Notifications
+ln -sT $dotfiles/.config/dunst $HOME/.config/dunst
+
 # Spicetify
 ln -sT $dotfiles/.config/spicetify/Extensions $HOME/.config/spicetify/Extensions
 ln -sT $dotfiles/.config/spicetify/Themes $HOME/.config/spicetify/Themes

@@ -4,6 +4,7 @@
 - **WM:** i3-gaps
 - **Compositor:** picom
 - **Bar:** polybar
+- **Notifications:** dunst
 - **Terminal:** Alacritty
 - **File Manager:** Thunar
 - **Application Launcher:** Rofi

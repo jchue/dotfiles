@@ -42,6 +42,16 @@ ln -s $HOME/.mozilla/firefox/.default-release/chrome $HOME/.mozilla/firefox/<pro
 
 Then ensure `toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true` in `about:config`.
 
+### Thunderbird
+
+Thunderbird is similar to Firefox, where custom styles are defined in `userChrome.css`, located under a unique `.default-release` directory. So the same symoblic linking techique is required:
+
+```bash
+ln -s $HOME/.thunderbird/.default-release/chrome $HOME/.thunderbird/<profile_id>.default-release/chrome
+```
+
+Then ensure `toolkit.legacyUserProfileCustomizations.stylesheets` is set to `true` in Preferences -> Config Editor.
+
 ### Spicetify
 
 After installation, ensure read and write permissions are enabled for the following directories (or wherever the Spotify client is located)::

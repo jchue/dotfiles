@@ -200,5 +200,6 @@ exec --no-startup-id dunst
 
 # Screen lock
 exec --no-startup-id light-locker
+exec --no-startup-id xset s on
 exec --no-startup-id xset s 300
-exec --no-startup-id xss-lock -n "light-locker-command -l" -- light-locker
+exec --no-startup-id xss-lock -n "dm-tool switch-to-greeter" -- light-locker

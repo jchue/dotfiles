@@ -40,8 +40,8 @@ done
 ln -sT $dotfiles/.thunderbird/.default-release/chrome $HOME/.thunderbird/$thunderbird_profile/chrome
 
 # Vim
-ln -sT $dotfiles/.vim/colors $HOME/.vim/colors
-ln -si $dotfiles/.vimrc $HOME/.vimrc
+ln -sT $dotfiles/.config/nvim/colors $HOME/.config/nvim/colors
+ln -si $dotfiles/.config/nvim/init.vim $HOME/.config/nvim/init.vim
 
 # Xfce Terminal
 ln -sT $dotfiles/.local/share/xfce4/terminal/colorschemes $HOME/.local/share/xfce4/terminal/colorschemes

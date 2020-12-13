@@ -1,0 +1,13 @@
+[Icon Theme]
+Name=Forester
+Directories=16x16/status,16x16/apps
+
+[16x16/status]
+Size=16
+Type=Fixed
+Context=Status
+
+[16x16/apps]
+Size=16
+Type=Fixed
+Context=Applications

@@ -5,6 +5,7 @@ Comment=Custom theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
+Name=Forester
 GtkTheme=Forester
 MetacityTheme=Forester
 IconTheme=Qogir-manjaro

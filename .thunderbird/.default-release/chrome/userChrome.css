@@ -1,6 +1,10 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 /* set default namespace to XUL */
 
+* {
+  scrollbar-color: var(--foreground) var(--background-dim) !important;
+}
+
 :root {
     --foreground: #a8a397;
     --background: #141414;
@@ -12,6 +16,15 @@
     --magenta: #52536b;
     --cyan: #2c3632;
     --white: #a8a397;
+
+    --background-dim: #0f0f0f;
+
+    /* Active tab and toolbar */
+    --toolbar-non-lwt-bgcolor: #222423 !important; /* --toolbar-bgcolor */
+    --toolbar-non-lwt-bgimage: none !important; /* --toolbar-bgimage */
+
+    --chrome-content-separator-color: #0a0a0a !important; /* Horizonal border between toolbar and main content */
+    --splitter-color: #0a0a0a !important; /* Vertical borders between folder list, message list, and message content */
 }
 
 /* Font size for:
@@ -30,6 +43,10 @@ Address Book: Directory Tree and contact list
  * MAIL
  ********************/
 
+treecols#threadCols {
+  border-bottom: 1px solid #0a0a0a !important;
+  padding: 2px !important;
+}
 
 /* Hover and selected rows */
 
@@ -39,6 +56,7 @@ treechildren::-moz-tree-row(hover) {
 
 treechildren::-moz-tree-row(selected) {
     background-color: var(--cyan) !important;
+    border: none !important;
 }
 
 

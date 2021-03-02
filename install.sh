@@ -5,6 +5,9 @@ dotfiles="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # i3
 ln -sT $dotfiles/.config/i3 $HOME/.config/i3
 
+#polybar
+ln -sT $dotfiles/.config/polybar $HOME/.config/polybar
+
 # picom
 ln -sT $dotfiles/.config/picom $HOME/.config/picom
 
@@ -45,6 +48,9 @@ ln -si $dotfiles/.config/nvim/init.vim $HOME/.config/nvim/init.vim
 
 # Xfce Terminal
 ln -sT $dotfiles/.local/share/xfce4/terminal/colorschemes $HOME/.local/share/xfce4/terminal/colorschemes
+
+# Alacritty
+ln -sT $dotfiles/.config/alacritty $HOME/.config/alacritty
 
 # Themes
 ln -sT $dotfiles/.themes $HOME/.themes

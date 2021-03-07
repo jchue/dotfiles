@@ -53,6 +53,7 @@ ln -sT $dotfiles/.local/share/xfce4/terminal/colorschemes $HOME/.local/share/xfc
 ln -sT $dotfiles/.config/alacritty $HOME/.config/alacritty
 
 # Themes
+ln -sT $dotfiles/.config/gtk-3.0 $HOME/.config/gtk-3.0
 ln -sT $dotfiles/.themes $HOME/.themes
 
 # VS Code

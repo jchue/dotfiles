@@ -10,7 +10,7 @@
 - **Application Launcher:** Rofi
 - **Web Browser:** Firefox
 - **Music Player:** Spotify with Spicetify
-- **Font:** Inconsolata (GUI), Cozette (terminal/monospace)
+- **Font:** Cozette
 
 ## Colors
 

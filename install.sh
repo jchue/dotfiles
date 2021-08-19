@@ -58,3 +58,6 @@ ln -sT $dotfiles/.themes $HOME/.themes
 
 # VS Code
 ln -sT $dotfiles/.vscode-oss/extensions $HOME/.vscode-oss/extensions # Will vary depending on VS Code version
+
+# Git
+ln -si $dotfiles/.gitconfig $HOME/.gitconfig

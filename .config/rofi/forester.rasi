@@ -95,6 +95,10 @@ element.selected {
   background-color: @accent;
 }
 
+element-icon,
+element-text {
+  background-color: transparent;
+}
 
 /* Scrollbar */
 

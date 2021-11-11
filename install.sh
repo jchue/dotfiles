@@ -56,8 +56,9 @@ ln -sT $dotfiles/.config/alacritty $HOME/.config/alacritty
 ln -sT $dotfiles/.config/gtk-3.0 $HOME/.config/gtk-3.0
 ln -sT $dotfiles/.themes $HOME/.themes
 
-# VS Code
-ln -sT $dotfiles/.vscode-oss/extensions $HOME/.vscode-oss/extensions # Will vary depending on VS Code version
-
 # Git
 ln -si $dotfiles/.gitconfig $HOME/.gitconfig
+
+# VS Code - directory will vary depending on VS Code version
+ln -sT $dotfiles/.vscode-oss/extensions $HOME/.vscode-oss/extensions
+ln -s $dotfiles/.dotfiles/.config/Code\ -\ OSS/User/settings.json $HOME/.config/Code\ -\ OSS/User/settings.json

@@ -15,10 +15,12 @@
   
   /* Tabs */
   
-  --tab-min-height: 5px !important;
+  --tab-min-height: 35px !important;
   --tabs-border-color: var(--background-bright) !important; /* tab border*/
   --tab-line-color: var(--yellow) !important; /* Active tab top border */
   --tabs-navbar-shadow-size: 0 !important; /* Top border of navigation bar */
+  --tab-block-margin: 0 !important; /* Space around tabs */
+  --tab-border-radius: 0 !important; /* Tab rounding */
 
   /* Navigation */
   
@@ -26,9 +28,9 @@
   --toolbar-field-background-color: var(--background-dim) !important; /* URL field background color */
   --toolbar-field-border-color: var(--background-dim) !important; /* URL field border color */
   
-  --urlbar-container-height: 30px !important; /* URL section */
-  --urlbar-toolbar-height: 30px !important; /* Used for vertical centering calculation of urlbar */
-  --urlbar-height: 25px !important; /* URL field */
+  --urlbar-container-height: 35px !important; /* URL section */
+  --urlbar-toolbar-height: 35px !important; /* Used for vertical centering calculation of urlbar */
+  --urlbar-height: 30px !important; /* URL field */
 
   --autocomplete-popup-highlight-background: var(--cyan) !important; /* Selected entry background for URL autocomplete */
   --autocomplete-popup-highlight-color: var(--foreground) !important; /* Selected entry for URL autocomplete */
@@ -59,6 +61,21 @@
   background-color: var(--background) !important;
 }
 
+.tabbrowser-tab > .tab-stack > .tab-background {
+  background-color: var(--background) !important;
+  box-shadow: none !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-stack .tab-background {
+  background-color: var(--background-bright) !important;
+  background-image: none !important;
+}
+
+.tabbrowser-tab[selected="true"] .tab-stack .tab-background .tab-context-line {
+  background-color: var(--yellow);
+  height: 2px;
+}
+
 /* Favicon */
 .tab-icon-image {
   opacity: 0.5 !important;
@@ -66,19 +83,11 @@
 
 /* Tab close button */
 .tab-close-button {
-  height: 15px !important;
+  height: 20px !important;
   opacity: 0.5 !important;
-  width: 15px !important;
-}
-
-/* Nonactive tab hover top border */
-.tabbrowser-tab:hover > .tab-stack > .tab-background > .tab-line:not([selected="true"]):not([multiselected]) {
-  background-color: var(--cyan) !important;
-}
-
-/* Nonactive tab hover background */
-.tabbrowser-tab:hover > .tab-stack > .tab-background:not([selected="true"]):not([multiselected]) {
-  background-color: var(--background-bright) !important;
+  padding: 4px !important;
+  padding-inline-start: 4px !important;
+  width: 20px !important;
 }
 
 /* Navigation bar */

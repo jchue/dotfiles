@@ -5,7 +5,7 @@
   scrollbar-color: var(--foreground) var(--background-dim) !important;
 }
 
-:root {
+:root, * {
     --foreground: #a8a397;
     --background: #141414;
     --black: #1d2021;

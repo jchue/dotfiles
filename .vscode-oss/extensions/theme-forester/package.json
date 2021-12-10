@@ -4,7 +4,7 @@
     "description": "",
     "version": "1.0.0",
     "publisher": "jchue",
-    "license": "MIT",
+    "license": "",
     "engines": {
         "vscode": "*"
     },

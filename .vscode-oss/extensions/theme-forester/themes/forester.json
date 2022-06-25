@@ -469,6 +469,31 @@
         "editorIndentGuide.activeBackground": "#414140",
         "editor.lineHighlightBackground": "#1d2021",
 
+        // Bracket matches
+        "editorBracketMatch.background":"#424e5c44",
+        "editorBracketMatch.border":"#52645d",
+
+        // Bracket pair colorization
+        "editorBracketHighlight.foreground1": "#8d6939",
+        "editorBracketHighlight.foreground2": "#52645d",
+        "editorBracketHighlight.foreground3": "#52536b",
+        "editorBracketHighlight.foreground4": "#8d6939",
+        "editorBracketHighlight.foreground5": "#52645d",
+        "editorBracketHighlight.foreground6": "#52536b",
+        "editorBracketPairGuide.activeBackground1": "#8d6939",
+        "editorBracketPairGuide.activeBackground2": "#52645d",
+        "editorBracketPairGuide.activeBackground3": "#52536b",
+        "editorBracketPairGuide.activeBackground4": "#8d6939",
+        "editorBracketPairGuide.activeBackground5": "#52645d",
+        "editorBracketPairGuide.activeBackground6": "#52536b",
+        "editorBracketPairGuide.background1": "#845d2b",
+        "editorBracketPairGuide.background2": "#2c3632",
+        "editorBracketPairGuide.background3": "#3f3547",
+        "editorBracketPairGuide.background4": "#845d2b",
+        "editorBracketPairGuide.background5": "#2c3632",
+        "editorBracketPairGuide.background6": "#3f3547",
+        "editorBracketHighlight.unexpectedBracket.foreground": "#8a3a3a",
+
         /**
          * Editor Groups & Tabs
          * Editor Groups are the containers of editors. There can be many editor groups. A Tab is the container of an editor. Multiple Tabs can be opened in one editor group.
@@ -591,8 +616,6 @@
         "editorGutter.deletedBackground":"#e61f44",
         "gitDecoration.deletedResourceForeground":"#e61f44",
         "gitDecoration.conflictingResourceForeground":"#9d37fc",
-        "editorBracketMatch.background":"#424e5c44",
-        "editorBracketMatch.border":"#52645d",
         "notification.background":"#292c34",
         "notification.foreground":"#ffffff",
         "notification.buttonBackground":"#424e5c",

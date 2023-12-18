@@ -12,6 +12,10 @@
 - **Music Player:** Spotify with Spicetify
 - **Font:** Cozette
 
+![](./screenshots/1.png)
+
+![](./screenshots/3.png)
+
 ## Colors
 
 **Forester**
